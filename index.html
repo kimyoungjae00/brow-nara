@@ -2,12 +2,11 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nara's Homepage</title>
     <meta name="description" content="Homepage for nara">
     <meta name="author" content="KYJ">
-    <link rel="icon" type="image/png" href="images/favicon.png"
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <script src="https://kit.fontawesome.com/868f788ee5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,19 +15,30 @@
 </head>
 <body>
     <!-- NavBar -->
-    <nav id="navbar">
+    <nav class="navbar">
         <div class="navbar__logo">
             <i class="fab fa-diaspora"></i>
             <a href="#">눈썹 나라</a>
         </div>
         <ul class="navbar__menu">
-            <li class="navbar__menu__item">about</li>
-            <li class="navbar__menu__item">shop</li>
-            <li class="navbar__menu__item">work</li>
-            <li class="navbar__menu__item">skill</li>
-            <li class="navbar__menu__item">contact</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">FAQ</a></li>
         </ul>
+
+        <ul class="navbar__icons">
+            <li><i class="fas fa-phone-alt"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+        </ul>
+
+        <a class="navbar__togleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
     </nav>
+    <!-- Home -->
+    <section id="home"></section>
     <!-- About -->
     <section id="about"></section>
     <!-- Shop -->
