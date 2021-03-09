@@ -22,9 +22,9 @@
         </div>
         <ul class="navbar__menu">
             <li><a href="">Home</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Gallery</a></li>
+            <li><a href="">Introduction</a></li>
+            <li><a href="">Gallary</a></li>
+            <li><a href="">Map</a></li>
             <li><a href="">FAQ</a></li>
         </ul>
 
@@ -45,17 +45,71 @@
           <button id="next">&rang;</button>
         </div>
     </div>
-    <!-- Home -->
-    <section id="home"></section>
-    <!-- About -->
-    <section id="about"></section>
-    <!-- Shop -->
-    <section id="shop"></section>
-    <!-- work -->
-    <section id="work"></section>
-    <!-- skill -->
-    <section id="skill"></section>
-    <!-- contact -->
-    <section id="contact"></section>
+    <div class="container_1">
+        <section id="Gallary">
+            <input type="radio" id="tab1" name="tabs" checked>
+            <label for="tab1">전 & 후</label>
+            <input type="radio" id="tab2" name="tabs">
+            <label for="tab2">SHOP</label>
+            <input type="radio" id="tab3" name="tabs">
+            <label for="tab3">시술후기</label>    
+            <div id="afterImages" class="tabContent">
+                <ul>
+                <li><img src="images/img-1.jpg"></li>
+                <li><img src="images/img-2.jpg"></li>
+                <li><img src="images/img-3.jpg"></li>                 
+                </ul>
+            </div>
+            <div id="shop" class="tabContent">
+                <ul>
+                <li><img src="images/img-1.jpg"></li>
+                <li><img src="images/img-2.jpg"></li>
+                    
+                </ul>
+            </div>
+            <div id="comment" class="tabContent">
+                <ul>
+                <li><img src="images/img-1.jpg"></li>                   
+                </ul>
+            </div>       
+        </section>
+    </div>
+    <div class="container_2">
+        <section id="skills">
+            <h2>원장 소개</h2>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">김혜정 원장</h3>
+                    <img 
+                        src="images/profile.png" 
+                        alt="profile photh"
+                        class="home__avatar"
+                    >
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">수상 경력</h3>
+                        <ul class="tools__list">
+                            <li><span>마이크로피그먼트-그랑프리 수상</span></li>
+                            <li><span>조직위원회-속눈썹부문-대상 수상 </span></li>
+                            <li><span>아티스트-대상 수상</span></li>
+                            <li><span>반영구 수지 부문-그랑프리 수상</span></li>
+                            <li><span>반영구화장 - 심사위원</span></li>
+                        </ul>
+                    </div>
+                    <div class="ets">
+                        <h3 class="skillset__title">담당 업무</h3>
+                        <ul class="etc__list">
+                            <li><span>눈썹문신</span></li>
+                            <li><span>반영구 속눈썹</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mapAndFAQ">
+        
+        </section>
+    </div>
 </body>
 </html>
