@@ -1,115 +1,46 @@
 <!DOCTYPE html>
+<html lang="en">
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nara's Homepage</title>
-    <meta name="description" content="Homepage for nara">
-    <meta name="author" content="KYJ">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <script src="https://kit.fontawesome.com/868f788ee5.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nara's Homepage</title>
+        <meta name="description" content="Homepage for nara">
+        <meta name="author" content="KYJ">
+        <link rel="icon" type="image/png" href="images/favicon.png"
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <script src="https://kit.fontawesome.com/868f788ee5.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
 <body>
+
     <!-- NavBar -->
-    <nav class="navbar">
+    <nav id="navbar">
         <div class="navbar__logo">
             <i class="fab fa-diaspora"></i>
             <a href="#">눈썹 나라</a>
         </div>
         <ul class="navbar__menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">Introduction</a></li>
-            <li><a href="">Gallary</a></li>
-            <li><a href="">Map</a></li>
-            <li><a href="">FAQ</a></li>
+            <li class="navbar__menu__item">about</li>
+            <li class="navbar__menu__item">shop</li>
+            <li class="navbar__menu__item">work</li>
+            <li class="navbar__menu__item">skill</li>
+            <li class="navbar__menu__item">contact</li>
         </ul>
-
-        <ul class="navbar__icons">
-            <li><i class="fas fa-phone-alt"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-        </ul>
-
-        <a class="navbar__togleBtn">
-            <i class="fas fa-bars"></i>
-        </a>
     </nav>
-    <div id="slideShow">
-        <div id="slides">
-          <img src="images/main2.png" alt="">
-          <img src="images/main1.png" alt="">
-          <button id="prev">&lang;</button>
-          <button id="next">&rang;</button>
-        </div>
-    </div>
-    <div class="container_1">
-        <section id="Gallary">
-            <input type="radio" id="tab1" name="tabs" checked>
-            <label for="tab1">전 & 후</label>
-            <input type="radio" id="tab2" name="tabs">
-            <label for="tab2">SHOP</label>
-            <input type="radio" id="tab3" name="tabs">
-            <label for="tab3">시술후기</label>    
-            <div id="afterImages" class="tabContent">
-                <ul>
-                <li><img src="images/img-1.jpg"></li>
-                <li><img src="images/img-2.jpg"></li>
-                <li><img src="images/img-3.jpg"></li>                 
-                </ul>
-            </div>
-            <div id="shop" class="tabContent">
-                <ul>
-                <li><img src="images/img-1.jpg"></li>
-                <li><img src="images/img-2.jpg"></li>
-                    
-                </ul>
-            </div>
-            <div id="comment" class="tabContent">
-                <ul>
-                <li><img src="images/img-1.jpg"></li>                   
-                </ul>
-            </div>       
-        </section>
-    </div>
-    <div class="container_2">
-        <section id="skills">
-            <h2>원장 소개</h2>
-            <div class="skillset">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">김혜정 원장</h3>
-                    <img 
-                        src="images/profile.png" 
-                        alt="profile photh"
-                        class="home__avatar"
-                    >
-                </div>
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__title">수상 경력</h3>
-                        <ul class="tools__list">
-                            <li><span>마이크로피그먼트-그랑프리 수상</span></li>
-                            <li><span>조직위원회-속눈썹부문-대상 수상 </span></li>
-                            <li><span>아티스트-대상 수상</span></li>
-                            <li><span>반영구 수지 부문-그랑프리 수상</span></li>
-                            <li><span>반영구화장 - 심사위원</span></li>
-                        </ul>
-                    </div>
-                    <div class="ets">
-                        <h3 class="skillset__title">담당 업무</h3>
-                        <ul class="etc__list">
-                            <li><span>눈썹문신</span></li>
-                            <li><span>반영구 속눈썹</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="mapAndFAQ">
-        
-        </section>
-    </div>
+    <!-- About -->
+    <section id="about"></section>
+    <!-- Shop -->
+    <section id="shop"></section>
+    <!-- work -->
+    <section id="work"></section>
+    <!-- skill -->
+    <section id="skill"></section>
+    <!-- contact -->
+    <section id="contact"></section>
 </body>
-</html>
+</html> 
