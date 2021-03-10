@@ -140,16 +140,16 @@
             <h1>Gallary</h1>
             <div class="work__categories">
                 <button class="category__btn active">
-                    모든 사진<span class="category__count">8</span>
+                    ALL<span class="category__count">8</span>
                 </button>
                 <button class="category__btn">
-                    전&후 사진<span class="category__count">3</span>
+                    Before & After<span class="category__count">3</span>
                 </button>
                 <button class="category__btn">
-                    시술 후기<span class="category__count">3</span>
+                    Review<span class="category__count">3</span>
                 </button>  
                 <button class="category__btn">
-                    샵<span class="category__count">2</span>
+                    Shop<span class="category__count">2</span>
                 </button>
             </div>
 
@@ -177,6 +177,10 @@
                 </div>
                 <div class="project">
                     <img src="images/gallary/image3-2.png" alt="image1-1" class="project__img">
+                </div>
+                
+                <div id="lightbox">
+                    <img src="images/gallary/image1-1.png" alt="" id="lightboxImage">
                 </div>
             </div>
         </section>
@@ -214,5 +218,25 @@
                 </a>
             </div>
         </section>
+        <!-- Light box effect -->
+        <script>
+            var pics = document.getElementsByClassName("project__img"); // .pic인 요소들을 가져와 pics 라는 변수에 저장. querySelectorAll(".pic")도 가능
+            var lightbox = document.getElementById("lightbox");  // 라이트 박스. querySelector("#lightbox")도 가능
+            var lightboxImage = document.getElementById("lightboxImage");  // 라이트 박스 안의 이미지. querySelector("#lightboxImage")도 가능
+    
+            for (i=0; i<pics.length; i++) {
+                pics[i].addEventListener("click", showLightbox);
+            }
+
+            function showLightbox() {
+                      var bigLocation = this.getAttribute("src"); // bigLocation = this.data-src; 도 가능.
+                      lightboxImage.setAttribute("src", bigLocation);  // lightboxImage.src = bigLocation; 도 가능.
+                      lightbox.style.display = "block";  // 라이트박스 이미지를 화면에 표시
+            }
+            
+            lightbox.onclick = function() {  //click 이벤트가 발생했을 때 실행할 함수 선언
+                      lightbox.style.display = "none";  // lightbox 요소를 화면에서 감춤
+            }
+        </script>
     </body>
 </html> 

@@ -263,7 +263,7 @@ p {
   display: inline-block;
   position: relative;
   top: -30px;
-  left: 7px;
+  left: 3px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -275,13 +275,37 @@ p {
 }
 
 .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: yellow;
+  background-color: var(--color-light-white);
 }
 
 .project__img {
   max-width: 95%;
   max-height: 95%;
+  cursor: pointer;
+}
+
+#lightbox {
+  position: fixed; /* 위치 고정 */
+  width: 100%; /* 너비 */
+  height: 100%; /* 높이 */
+  background-color: var(--color-dark-grey); /* 배경색 */
+  top: 0; /* 시작 위치 - 위쪽 끝 */
+  left: 0; /* 시작 위치 - 왼쪽 끝 */
+  display: none; /* 화면에서 감추기 */
+}
+
+#lightbox img {
+  position: absolute; /* top, left에 의해 위치 지정 */
+  max-width: 90%;
+  max-height: 90%;
+  top: 50%; /* 위쪽에서 50% 부터 */
+  left: 50%; /* 왼쪽에서 50% 부터 */
+  transform: translate(-50%, -50%); /* 요소를 화면 중앙에 표시하기 위해 이동 */
+  border: 5px solid var(--color-white); /* 이미지 테두리 */
 }
