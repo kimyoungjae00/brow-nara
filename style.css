@@ -29,6 +29,7 @@
 /* Universla tags */
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -146,4 +147,31 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about__major {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  padding: 10px;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon:hover {
+  transform: scale(1.2);
 }
