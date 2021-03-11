@@ -28,7 +28,7 @@
   --size-border-radius: 4px;
 
   /*Annimation */
-  --animation-duration: 300ms;
+  --animation-duration: 500ms;
 }
 /* Universla tags */
 * {
@@ -261,7 +261,7 @@ p {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
-  padding: 8px 30px;
+  padding: 8px 20px;
 }
 
 .category__btn:focus,
@@ -289,8 +289,14 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
 }
 
+.work__projects.anim-out {
+  opacity: 0;
+  transition: all var(--animation-duration) ease-in-out;
+  transform: scale(0.3) translateY(-150px);
+}
 .project {
   display: none;
 }

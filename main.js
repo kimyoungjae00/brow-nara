@@ -59,14 +59,17 @@ workBtnContainer.addEventListener('click', (e)=> {
     if(filter == null){
         return;
     }
-    console.log(filter);
-    project.forEach((project) => {
-        if(filter === project.dataset.type) {
-            project.classList.add('visible');
-        } else {
-            project.classList.remove('visible');
-        }
-    });
+    projectContainer.classList.add('anim-out');
+    setTimeout(()=> {
+        project.forEach((project) => {
+            if(filter === project.dataset.type) {
+                project.classList.add('visible');
+            } else {
+                project.classList.remove('visible');
+            }
+        });
+        projectContainer.classList.remove('anim-out');
+    }, 600);
 });
 
 function scrollintoView(selector) {
