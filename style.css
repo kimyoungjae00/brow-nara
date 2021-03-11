@@ -4,8 +4,9 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
+  --color-light-pink: #f5e4e2;
+  --color-pink: #e97e7c;
+  --color-dark-pink: #fa5d57;
   --color-black: #000000;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -154,13 +155,9 @@ p {
 
 /* Section common */
 .section {
-  padding: 50px;
-  text-align: center;
-  margin: auto;
-}
-
-.section__container {
   max-width: 1200px;
+  padding: 20px 0 30px 0;
+  text-align: center;
   margin: auto;
 }
 
@@ -189,7 +186,7 @@ p {
 
 .skillset {
   display: flex;
-  background-color: var(--color-light-grey);
+  background-color: var(--color-dark-grey);
   color: var(--color-light-white);
   margin: 20px 0;
 }
@@ -198,24 +195,30 @@ p {
   color: var(--color-white);
 }
 .skillset__left {
+  padding: 15px 50px;
   flex-basis: 50%;
 }
 
 .skillset__right {
   flex-basis: 50%;
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-light-grey);
 }
 
 .skill {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .tools {
+  padding: 15px 30px 5px 30px;
   background-color: var(--color-grey);
 }
 
 .etc {
-  padding: 15px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
 }
+
 .skill__description {
   display: flex;
   justify-content: space-between;
@@ -281,7 +284,7 @@ p {
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: var(--color-light-white);
+  background-color: var(--color-light-pink);
 }
 
 .project__img {
@@ -308,4 +311,68 @@ p {
   left: 50%; /* 왼쪽에서 50% 부터 */
   transform: translate(-50%, -50%); /* 요소를 화면 중앙에 표시하기 위해 이동 */
   border: 5px solid var(--color-white); /* 이미지 테두리 */
+}
+
+/* Maps */
+#testimonials {
+  background-color: var(--color-light-white);
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.testimonial {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.testimonial__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.testimonial__avatar:nth-child(odd) {
+  margin-right: 10px;
+}
+.testimonial__avatar:nth-child(even) {
+  margin-left: 10px;
+}
+
+.testimonial__speech-bubble {
+  padding: 5px 10px;
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+.skill__list {
+  margin: 5px;
+  color: var(--color-light-grey);
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  padding: 20px 0 30px 0;
+  margin: auto;
+  background-color: var(--color-pink);
+}
+
+.contact__title,
+.contact__phone,
+.contact__openkakao,
+#contact p {
+  color: var(--color-white);
+}
+
+.contact__links i {
+  padding: 0px 8px;
+  font-size: var(--font-medium);
 }
