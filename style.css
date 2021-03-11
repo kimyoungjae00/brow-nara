@@ -376,3 +376,9 @@ p {
   padding: 0px 8px;
   font-size: var(--font-medium);
 }
+
+.contact__links i:hover,
+.contact__openkakao a:hover {
+  color: var(--color-orange);
+  transition: all var(--animation-duration) ease-in;
+}
