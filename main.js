@@ -11,6 +11,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
+
 // Handle scrolling when tapping on the navbar menu and home button
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (e)=> {
@@ -19,12 +20,19 @@ navbarMenu.addEventListener('click', (e)=> {
     if(link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollintoView(link);
+});
 
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
 });
 
 const homeContact = document.querySelector('.home__contact');
 homeContact.addEventListener('click', ()=> {
+    navbarMenu.classList.remove('open');
     scrollintoView('#contact');
 });
 
@@ -47,6 +55,7 @@ document.addEventListener('scroll', ()=> {
 
 // Handle click on the "arrow up" button
 arrowup.addEventListener('click', ()=>{
+    navbarMenu.classList.remove('open');
     scrollintoView('#home');
 });
 
@@ -55,7 +64,7 @@ const workBtnContainer = document.querySelector('.work__categories');
 const projectContainer = document.querySelector('.work__projects');
 const project = document.querySelectorAll('.project');
 workBtnContainer.addEventListener('click', (e)=> {
-    const filter = e.target.dataset.filter;
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
     if(filter == null){
         return;
     }
@@ -64,6 +73,7 @@ workBtnContainer.addEventListener('click', (e)=> {
         const active = document.querySelector('.category__btn.selected');
         active.classList.remove('selected');
     } 
+
     e.target.classList.add('selected');
 
     projectContainer.classList.add('anim-out');

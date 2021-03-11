@@ -5,7 +5,7 @@
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
   --color-light-pink: #f5e4e2;
-  --color-pink: #e97e7c;
+  --color-pink: #eb8684;
   --color-dark-pink: #fa5d57;
   --color-black: #000000;
   --color-dark-grey: #4d4d4d;
@@ -49,9 +49,6 @@ a {
 ul {
   padding-left: 0;
   list-style: none;
-}
-
-li {
 }
 
 button {
@@ -98,12 +95,12 @@ p {
   background-color: transparent;
   align-items: center;
   color: var(--color-white);
-  padding: 1px 16px;
+  padding: 0px 18px;
   z-index: 1;
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-pink);
+  background-color: #eb86846b;
   transition: all var(--animation-duration) ease-in-out;
 }
 .navbar__menu {
@@ -169,7 +166,7 @@ p {
 /* Section common */
 .section {
   max-width: 1200px;
-  padding: 20px 0 50px 0;
+  padding: 30px 0 50px 0;
   text-align: center;
   margin: auto;
 }
@@ -431,17 +428,28 @@ p {
   .navbar__toggle-btn {
     display: block;
   }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-pink);
   }
+
   .navbar__menu {
     flex-direction: column;
     text-align: center;
-    margin: auto;
+    width: 100%;
     display: none;
+    margin: 2px;
   }
 
+  .navbar__menu__item {
+    padding: 1px;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
   .about__major {
     flex-direction: column;
   }
