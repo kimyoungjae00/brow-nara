@@ -23,31 +23,40 @@
                 <i class="fab fa-diaspora"></i>
                 <a href="#">눈썹 나라</a>
             </div>
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item active">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">My work</li>
-                <li class="navbar__menu__item">testimonials</li>
-                <li class="navbar__menu__item">Contact</li>
-            </ul>
+            <div class="navbar__menu">
+                <ul class="navbar__menu">
+                <li class="navbar__menu__item active" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">Intro</li>
+                <li class="navbar__menu__item" data-link="#skills">Map</li>
+                <li class="navbar__menu__item" data-link="#work">Gallary</li>
+                <li class="navbar__menu__item" data-link="#testimonials">Person</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
+                </ul>
+            </div>
+
+            <!-- Toggle button -->
+            <button class="navbar__toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
         <!-- Home -->
         <section id="home">
-            <img 
-                src="images/logo.png"
-                alt="nara's logo photo"
-                class="home__avatar"
-            />
-            <h1 class="home__title">안녕하세요 <br>눈썹나라입니다 </h1>
-            <h2 class="home__description">천안 반영구 눈썹문신 전문샵입니다</h2>
-            <button class="home__contact">문의하기</button>
+            <div class="home__container">
+                <img 
+                    src="images/logo.png"
+                    alt="nara's logo photo"
+                    class="home__avatar"
+                />
+                <h1 class="home__title">안녕하세요 <br>눈썹나라입니다 </h1>
+                <h2 class="home__description">천안 반영구 눈썹 문신 전문샵입니다</h2>
+                <button class="home__contact">문의하기</button>
+            </div>
         </section>
         <!-- About -->
-        <section id="about" class="section section__container">
+        <section id="about" class="section">
             <h1>눈썹나라에서는</h1>
-            <p>당신도 예쁘고, 오래가는 반영구 눈썹을 가질 수 있습니다.</p>
-            <p>현재 코로나 방역[소독]에 최선을 다하고있습니다. 모든 방문자및 시술자는 마스크가 필수이며 안전하게 시술받을 수 있습니다.</p>
+            <p>당신도 아름다운 눈썹을 가질 수 있습니다.</p>
+            <p>현재 코로나 방역 [소독]에 최선을 다하고있습니다. 모든 방문자 및 시술자는 마스크착용이 필수이며 안전하게 시술받을 수 있습니다.</p>
             <div class="about__major">
                 <div class="major">
                     <img 
@@ -74,9 +83,8 @@
         </section>
         <!-- Skills -->
         <section id="skills" class="section">
-            
             <h1>위치 및 시술정보</h1>
-            <p>전문 뷰티라이너로서 얼굴형, 피부톤을 고려한 가장 안전하고 본인에게 잘 어울리는 시술을 해드립니다.</p>
+            <p>간편한 반영구 눈썹문신으로, 당신의 고민을 해결해 드립니다.</p>
             <div class="skillset">
                 <div class="skillset__left">
                         <h3 class="skillset__title">시술 정보</h3>
@@ -122,7 +130,7 @@
                             </div>
                         </div>
                 </div>
-                 <div class="skillset__right">
+                <div class="skillset__right">
                     <div class="tools">
                             <h3 class="skillset__title">위치 정보</h3>
                             <ul class="tools__list">
@@ -140,51 +148,51 @@
                             </iframe>
                     </div>
                 </div>
-             </div>
+            </div>
         </section>
         <!-- Work -->
         <section id="work" class="section">
             <h1>Gallary</h1>
+            <p>보고싶은 사진 항목을 클릭해주세요</p>
             <div class="work__categories">
-                <button class="category__btn active">
-                    ALL<span class="category__count">8</span>
+                <button class="category__btn" data-filter="after">
+                    After<span class="category__count">3</span>
                 </button>
-                <button class="category__btn">
-                    Before & After<span class="category__count">3</span>
-                </button>
-                <button class="category__btn">
+                <button class="category__btn" data-filter="review">
                     Review<span class="category__count">3</span>
                 </button>  
-                <button class="category__btn">
+                <button class="category__btn" data-filter="shop">
                     Shop<span class="category__count">2</span>
                 </button>
+
             </div>
 
             <div class="work__projects">
-                <div class="project">
+                <div class="project" data-type="after">
                     <img src="images/gallary/image1-1.png" alt="image1-1" class="project__img">
                 </div>
-                <div class="project">
-                    <img src="images/gallary/image1-2.png" alt="image1-1" class="project__img">
+                <div class="project" data-type="after">
+                    <img src="images/gallary/image1-2.png" alt="image1-1" class="project__img">                    
                 </div>
-                <div class="project">
+                <div class="project" data-type="after">
                     <img src="images/gallary/image1-3.png" alt="image1-1" class="project__img">
-                </div>
-                <div class="project">
+                </div> 
+                <div class="project" data-type="review">
                     <img src="images/gallary/image2-1.png" alt="image1-1" class="project__img">
                 </div>
-                <div class="project">
+                <div class="project" data-type="review">
                     <img src="images/gallary/image2-2.png" alt="image1-1" class="project__img">
                 </div>
-                <div class="project">
+                <div class="project" data-type="review">
                     <img src="images/gallary/image2-3.png" alt="image1-1" class="project__img">
                 </div>
-                <div class="project">
+                <div class="project" data-type="shop">
                     <img src="images/gallary/image3-1.png" alt="image1-1" class="project__img">
                 </div>
-                <div class="project">
+                <div class="project" data-type="shop">
                     <img src="images/gallary/image3-2.png" alt="image1-1" class="project__img">
                 </div>
+            </div>
                 
                 <div id="lightbox">
                     <img src="images/gallary/image1-1.png" alt="" id="lightboxImage">
@@ -194,12 +202,13 @@
         <!-- Map -->
         <section id="testimonials" class="section">
             <h1>원장진 소개</h1>
+            <p>전문 뷰티라이너로서 얼굴형, 피부톤을 고려한 본인에게 가장 잘 어울리는 시술을 해드립니다.</p>
             <div class="testimonials">
                 <div class="testimonial">
                     <img src="images/profile-1.png" alt="Map" class="testimonial__avatar">
                     <div class="testimonial__speech-bubble">
                         <h2 class="introduction">김혜정</h2>
-                        <ul class="skill__list">
+                        <ul class="testimonial__list">
                             <li>서울국제미용건강 올림픽속눈썹연장 대상</li>
                             <li>국제 미용가 연합회 반영구화장 심사위원</li>
                             <li>SPC JAPAN United of SPC 수료</li>
@@ -211,7 +220,7 @@
                 <div class="testimonial">
                     <div class="testimonial__speech-bubble">
                         <h2 class="introduction">김민재</h2>
-                        <ul class="skill__list">
+                        <ul class="testimonial__list">
                             <li>국제미용건강 올림픽속눈썹연장 대상</li>
                             <li>부산 미용가 연합회 반영구화장 심사위원</li>
                             <li>SPC JAPAN United of SPC 수료</li>
@@ -241,6 +250,10 @@
                 </a>
             </div>
         </section>
+        <!-- Arrow up  -->
+        <button class="arrow-up">
+            <i class="fas fa-arrow-up"></i> 
+        </button>
         <!-- Light box effect -->
         <script>
             var pics = document.getElementsByClassName("project__img"); // .pic인 요소들을 가져와 pics 라는 변수에 저장. querySelectorAll(".pic")도 가능
