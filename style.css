@@ -409,7 +409,7 @@ p {
 
 .arrow-up {
   position: fixed;
-  bottom: 60px;
+  bottom: 30px;
   right: 12px;
   font-size: 30px;
   color: var(--color-white);
